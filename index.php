@@ -45,7 +45,7 @@ require_once('./entities/Student.php');
 // foreach ($numbers as $number) {
 //     echo $number . '</br>';
 // }
-// const usuario ={
+// const usuario = {
 //     username:'Manolo77',
 //     password : '123456',
 // }
