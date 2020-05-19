@@ -45,3 +45,15 @@ require_once('./entities/Student.php');
 // foreach ($numbers as $number) {
 //     echo $number . '</br>';
 // }
+// const usuario ={
+//     username:'Manolo77',
+//     password : '123456',
+// }
+$usuario =[//arrays asociativos
+    'username' => 'Manolo77',
+    'password' => '123456',
+    'hobbies' => ['coding'=>['C++','COBOL','Pascal'], 0 => 'traveling']
+];
+echo $usuario['username'] . '<br>'.$usuario['password'];
+echo '<br/>';
+echo $usuario['hobbies'][0];
