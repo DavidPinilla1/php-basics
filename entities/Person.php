@@ -2,6 +2,7 @@
 
 namespace entities;
 
+// use entities\interfaces\AbsPerson as AbsPerson;
 use entities\interfaces\iPerson as iPerson;
 
 class Person implements iPerson
@@ -9,7 +10,7 @@ class Person implements iPerson
   protected $name;
   protected $age;
   public $id;
-  static public $users=0;
+  static public $users = 0;
   function __construct($name, $age)
   {
     $this->name = $name;
@@ -24,12 +25,12 @@ class Person implements iPerson
   {
     return $this->age;
   }
-  public function setAge($age)
+  public function setAge($age) //override
   {
-    $this->age=$age;
+    $this->age = $age;
   }
   public function setName($name)
   {
-    $this->name=$name;
+    $this->name = $name;
   }
 }
